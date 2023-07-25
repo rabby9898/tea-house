@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>
     <title>Tea House</title>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="px-4 lg:px-32">
+        <div>
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-9">
+                    <img class="w-full mb-10" src="./images/banner.png" alt="">
+                    <div class="relative mb-12">
+                        <div class="card absolute -top-20 -left-32 lg:top-40 lg:left-36 w-max px-1 lg:px-4 bg-base-100 shadow-xl">
+
+                            <div class="rating rating-lg inline-block absolute top-12">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFDC64]" checked />
+                            </div>
+
+                            <div class="card-body ml-4">
+                              <h2 class="card-title text-3xl text-black font-extrabold">5.00</h2>
+                              <p class="text-base text-[#777] font-semibold">Trust Pilot Ratings</p>
+                            </div>
+
+                          </div>
+                    </div>
+                  <div>
+                    <h1 class="text-7xl font-extrabold text-[#1C1C1C]">It's good 
+                        tea time at The Tea House</h1>
+                    <p class="py-6 text-lg text-[#777] font-medium  mt-4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary bg-gradient-to-r from-[#FF8938] to-[#F00] text-xl text-white font-bold border-0 capitalize px-8 py-5 h-auto">Explore More <img src="./images/arrow.png" alt=""></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
